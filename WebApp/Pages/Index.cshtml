@@ -17,7 +17,7 @@
             <th>Document Source</th>
         </tr>
 
-        @foreach (var doc in this.Model.DocumentLibrary.Documents.Where(x => x.DocumentType == DocumentService.Dto.DocumentType.DocStoreDocument))
+        @foreach (var doc in this.Model.DocumentLibrary.Documents.Where(x => x.DocumentType == DocumentService.Enums.DocumentType.DocStoreDocument))
         {
             <tr>
                 <td>@doc.ClientCode</td>
@@ -38,7 +38,7 @@
             <th>Document Source</th>
         </tr>
 
-        @foreach (var doc in this.Model.DocumentLibrary.Documents.Where(x => x.DocumentType == DocumentService.Dto.DocumentType.ExecutedDocument))
+        @foreach (var doc in this.Model.DocumentLibrary.Documents.Where(x => x.DocumentType == DocumentService.Enums.DocumentType.ExecutedDocument))
         {
             <tr>
                 <td>@doc.ClientCode</td>
@@ -59,7 +59,7 @@
             <th>Document Source</th>
         </tr>
 
-        @foreach (var doc in this.Model.DocumentLibrary.Documents.Where(x => x.DocumentType == DocumentService.Dto.DocumentType.MinuteBook))
+        @foreach (var doc in this.Model.DocumentLibrary.Documents.Where(x => x.DocumentType == DocumentService.Enums.DocumentType.MinuteBook))
         {
             <tr>
                 <td>@doc.ClientCode</td>
@@ -80,7 +80,7 @@
             <th>Document Source</th>
         </tr>
 
-        @foreach (var doc in this.Model.DocumentLibrary.Documents.Where(x => x.DocumentType == DocumentService.Dto.DocumentType.Opinion))
+        @foreach (var doc in this.Model.DocumentLibrary.Documents.Where(x => x.DocumentType == DocumentService.Enums.DocumentType.Opinion))
         {
             <tr>
                 <td>@doc.ClientCode</td>

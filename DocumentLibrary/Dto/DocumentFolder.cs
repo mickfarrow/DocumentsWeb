@@ -1,4 +1,6 @@
-﻿namespace DocumentService.Dto
+﻿using DocumentService.Interfaces;
+
+namespace DocumentService.Dto
 {
     public class DocumentFolder : IDocumentFolder
     {

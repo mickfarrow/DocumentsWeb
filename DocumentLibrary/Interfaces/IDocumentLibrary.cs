@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace DocumentService.Dto
+namespace DocumentService.Interfaces
 {
     public interface IDocumentLibrary
     {

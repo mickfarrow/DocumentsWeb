@@ -1,4 +1,4 @@
-﻿namespace DocumentService.Dto
+﻿namespace DocumentService.Interfaces
 {
     public interface IDocumentFolder
     {

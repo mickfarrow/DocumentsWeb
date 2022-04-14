@@ -1,4 +1,5 @@
 ﻿using DocumentService.Dto;
+using DocumentService.Enums;
 using DocumentService.Interfaces;
 using System;
 using System.Collections.Generic;
