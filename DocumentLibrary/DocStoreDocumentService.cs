@@ -15,7 +15,7 @@ namespace DocumentService
 
         }
 
-        public IDocument CopyDocument(IDocument document, DocumentFolder destinationFolder)
+        public IDocument CopyDocument(IDocument document, IDocumentFolder destinationFolder)
         {
             throw new NotImplementedException();
         }
@@ -69,7 +69,7 @@ namespace DocumentService
             };
         }
 
-        public IDocument MoveDocument(IDocument document, DocumentFolder destinationFolder)
+        public IDocument MoveDocument(IDocument document, IDocumentFolder destinationFolder)
         {
             throw new NotImplementedException();
         }

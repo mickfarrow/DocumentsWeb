@@ -11,8 +11,8 @@ namespace DocumentService.Interfaces
         List<IDocumentFolder> GetDocumentFolders(string clientCode, int parentId);
         List<IDocument> GetDocuments(string clientCode, int folderId);
         List<IDocument> GetDocumentsByClientCode(string clientCode);
-        IDocument CopyDocument(IDocument document, DocumentFolder destinationFolder);
-        IDocument MoveDocument(IDocument document, DocumentFolder destinationFolder);
+        IDocument CopyDocument(IDocument document, IDocumentFolder destinationFolder);
+        IDocument MoveDocument(IDocument document, IDocumentFolder destinationFolder);
         Stream GetDocument(string clientCode, int documentId);
         bool Save(IDocument document);
         bool Upload(IDocument document, Stream stream);
