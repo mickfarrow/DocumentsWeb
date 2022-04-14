@@ -1,0 +1,94 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h3>DocStore</h3>
+    <table class="table">
+        <tr>
+            <th>Client Code</th>
+            <th>Document_Id</th>
+            <th>Folder Name</th>
+            <th>Document Name</th>
+            <th>Document Source</th>
+        </tr>
+
+        @foreach (var doc in this.Model.DocumentLibrary.Documents.Where(x => x.DocumentType == DocumentService.Dto.DocumentType.DocStoreDocument))
+        {
+            <tr>
+                <td>@doc.ClientCode</td>
+                <td>@doc.Id</td>
+                <td>@doc.Folder.FolderName</td>
+                <td>@doc.DocumentName</td>
+                <td>@doc.Source.ToString()</td>
+            </tr>
+        }
+    </table>
+    <h3>Executed Documents</h3>
+    <table class="table">
+        <tr>
+            <th>Client Code</th>
+            <th>Document_Id</th>
+            <th>Folder Name</th>
+            <th>Document Name</th>
+            <th>Document Source</th>
+        </tr>
+
+        @foreach (var doc in this.Model.DocumentLibrary.Documents.Where(x => x.DocumentType == DocumentService.Dto.DocumentType.ExecutedDocument))
+        {
+            <tr>
+                <td>@doc.ClientCode</td>
+                <td>@doc.Id</td>
+                <td>@doc.Folder.FolderName</td>
+                <td>@doc.DocumentName</td>
+                <td>@doc.Source.ToString()</td>
+            </tr>
+        }
+    </table>
+    <h3>Minute Book</h3>
+    <table class="table">
+        <tr>
+            <th>Client Code</th>
+            <th>Document_Id</th>
+            <th>Folder Name</th>
+            <th>Document Name</th>
+            <th>Document Source</th>
+        </tr>
+
+        @foreach (var doc in this.Model.DocumentLibrary.Documents.Where(x => x.DocumentType == DocumentService.Dto.DocumentType.MinuteBook))
+        {
+            <tr>
+                <td>@doc.ClientCode</td>
+                <td>@doc.Id</td>
+                <td>@doc.Folder.FolderName</td>
+                <td>@doc.DocumentName</td>
+                <td>@doc.Source.ToString()</td>
+            </tr>
+        }
+    </table>
+    <h3>Opinions</h3>
+    <table class="table">
+        <tr>
+            <th>Client Code</th>
+            <th>Document_Id</th>
+            <th>Folder Name</th>
+            <th>Document Name</th>
+            <th>Document Source</th>
+        </tr>
+
+        @foreach (var doc in this.Model.DocumentLibrary.Documents.Where(x => x.DocumentType == DocumentService.Dto.DocumentType.Opinion))
+        {
+            <tr>
+                <td>@doc.ClientCode</td>
+                <td>@doc.Id</td>
+                <td>@doc.Folder.FolderName</td>
+                <td>@doc.DocumentName</td>
+                <td>@doc.Source.ToString()</td>
+            </tr>
+        }
+    </table>
+</div>
